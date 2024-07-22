@@ -8,9 +8,10 @@ import AppRouter from "./AppRouter";
 import styled from "styled-components";
 
 const AppContainer = styled.div`
-  max-width: 1200px;
+  max-width: 393px; // 아이폰 15 기준
+  max-height: 852px; // 아이폰 15 기준
   margin: 0 auto;
-  padding: 2rem;
+  //padding: 2rem;
 `;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

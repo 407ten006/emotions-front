@@ -6,46 +6,51 @@ const LoginContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: white;
+  height: calc(var(--vh, 1vh) * 100);
+  justify-content: space-between;
+  background-color: #1a1a1a;
 `;
 
 const LoginBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  max-width: 320px;
-`;
-
-const LogoPlaceholder = styled.div`
-  width: 80px;
-  height: 80px;
-  background-color: #f0f0f0;
-  border-radius: 16px;
-  margin-bottom: 20px;
+  justify-content: center;
+  height: 100%;
 `;
 
 const LoginText = styled.p`
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 40px;
+  font-size: 41.05px;
+  font-weight: bold;
+  color: #d9d000;
+  text-align: center;
+  line-height: 160%;
+  letter-spacing: -0.821px;
 `;
 
 const LoginButton = styled.button`
   width: 100%;
+  max-width: 335px;
+  height: 65px;
   padding: 15px 0;
   background-color: #03c75a;
   color: white;
   border: none;
-  border-radius: 6px;
-  font-size: 16px;
+  border-radius: 8px;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 160%;
+  letter-spacing: -0.36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 34px;
   cursor: pointer;
-  &:hover {
-    background-color: #02b350;
-  }
+`;
+
+const NaverLogo = styled.span`
+  font-weight: bold;
+  margin-right: 8px;
 `;
 
 const Login = () => {
@@ -69,10 +74,20 @@ const Login = () => {
   return (
     <LoginContainer>
       <LoginBox>
-        <LogoPlaceholder />
-        <LoginText>서비스명과 함께 ~~~~를 해보세요!</LoginText>
-        <LoginButton onClick={handleLogin}>네이버로 로그인</LoginButton>
+        <LoginText>
+          서비스명과
+          <br />
+          서비스로고
+          <br />
+          나오면
+          <br />
+          수정 예정입니다
+        </LoginText>
       </LoginBox>
+      <LoginButton onClick={handleLogin}>
+        <NaverLogo>N</NaverLogo>
+        네이버로 로그인
+      </LoginButton>
     </LoginContainer>
   );
 };

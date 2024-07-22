@@ -11,18 +11,18 @@ const NaverCallback = () => {
       try {
         const response = await axios.post(
           `https://bumpy-bunny-koreaboardgamearena-36c727ad.koyeb.app/api/v1/auth/naver-login?provider=${provider}`,
-          { code, state }
+          { code, state },
         );
         console.log("Login successful", response.data);
         localStorage.setItem("jwt_token", response.data.access_token);
-        navigate("/diary");
+        navigate("/email-check");
       } catch (error) {
         console.error("Login failed", error);
-        alert('로그인 실패')
+        alert("로그인 실패");
         navigate("/");
       }
     },
-    [navigate]
+    [navigate],
   );
 
   useEffect(() => {
