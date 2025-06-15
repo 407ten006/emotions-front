@@ -53,14 +53,3 @@
 
 - [📄 API 명세 바로가기](https://bumpy-bunny-koreaboardgamearena-36c727ad.koyeb.app/docs#/)
 
-Swagger 기반의 문서로 실제 엔드포인트와 응답 구조를 손쉽게 확인할 수 있습니다.
-
----
-
-## 📬 기여 및 문의
-
-- 이 프로젝트에 관심이 있다면 Issue를 등록하거나 PR을 보내주세요.
-- 개선 제안, 버그 제보 언제든 환영합니다!
-
----
-
